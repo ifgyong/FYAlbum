@@ -16,5 +16,12 @@ FYAlbumManager * manager =[FYAlbumManager shareAlbumManager];
 
 ```
 
+#Installation
+Use cocoapods
+
+```
+pod 'FYAlbum'
+```
+
 #license
 MIT
