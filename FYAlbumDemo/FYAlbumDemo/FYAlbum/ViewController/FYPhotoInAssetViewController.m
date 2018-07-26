@@ -106,6 +106,8 @@
     PHImageManager * manager =[PHImageManager defaultManager];
     PHImageRequestOptions * ops =[[PHImageRequestOptions alloc]init];
     ops.synchronous = YES;
+    ops.networkAccessAllowed = YES;//从网络获取
+//    ops.synchronous = NO;
     
     for (NSIndexPath * item in self.dataSelected) {
         PHAsset * asset = self.dataArray[item.row];
@@ -114,7 +116,9 @@
                           contentMode:PHImageContentModeDefault
                               options:ops
                         resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-                            [mutArray addObject:result];
+                            if (result) {
+                                [mutArray addObject:result];
+                            }
                         }];
     }
     if (self.complateBlock) {
