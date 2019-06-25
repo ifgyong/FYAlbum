@@ -23,5 +23,5 @@ Use cocoapods
 pod 'FYAlbum'
 ```
 
-#license
+# license
 MIT
