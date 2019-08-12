@@ -4,7 +4,7 @@
 
 
 # 使用之前需要导入Photo.framework 
-#使用例子
+# 使用例子
 
 ```
 FYAlbumManager * manager =[FYAlbumManager shareAlbumManager];
@@ -16,7 +16,7 @@ FYAlbumManager * manager =[FYAlbumManager shareAlbumManager];
 
 ```
 
-#Installation
+# Installation
 Use cocoapods
 
 ```
